@@ -13,6 +13,9 @@ public class Main {
         for (Node n : path){
             System.out.println("(" + n.x + ", " + n.y + ")");   
         }
+    } else { 
+        System.out.println("No path found.");
+         
    public static void main(String[] args) {
        
 class Node Implments Comparable<Node> {
@@ -104,13 +107,12 @@ public class AStarSearch{
 }
     public static void main(String[] args) {
          
-        }
-    } else { 
-        System.out.println("No path found.");
+        
     }
     }
     
 }
+
 
 
 
