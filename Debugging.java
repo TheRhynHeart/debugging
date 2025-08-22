@@ -4,7 +4,7 @@ public class Debugging {
 class Node Implments Comparable<Node> {
     public int x, y;
     public double gCost, hCost;
-    public Node 
+    public Node parent;
 
     public Node(int x, int y){
         this.x = x;
@@ -104,5 +104,6 @@ public class AStarSearch{
     }
     
 }
+
 
 
