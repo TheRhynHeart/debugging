@@ -8,6 +8,11 @@ public class Main {
 
     List<Node> path = AStarSearch.findPath(start, goal);
 
+     if (path != null){
+        System.out.println("Path found:");
+        for (Node n : path){
+            System.out.println("(" + n.x + ", " + n.y + ")");   
+        }
    public static void main(String[] args) {
        
 class Node Implments Comparable<Node> {
@@ -99,10 +104,6 @@ public class AStarSearch{
 }
     public static void main(String[] args) {
          
-    if (path != null){
-        System.out.println("Path found:");
-        for (Node n : path){
-            System.out.println("(" + n.x + ", " + n.y + ")");   
         }
     } else { 
         System.out.println("No path found.");
@@ -110,6 +111,7 @@ public class AStarSearch{
     }
     
 }
+
 
 
 
