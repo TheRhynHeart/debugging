@@ -3,6 +3,7 @@ package myPackage;
 import java.util.*;
 
 public class Main {
+    public static void main(String[] args) {
     Node start = new Node (0, 0);
     Node goal - new Node (4, 4);
 
@@ -101,31 +102,21 @@ public class Main {
                     if (closedSet.contains(neighbor)) continue;
 
                     double tentativeG = current.gCost + 1;
-                    boolean better = false;
 
-                    if(!openSet.contains(neighbor)){
-                        neighbor.hCost = Math.abs(nx - goal.x) + Math. abs(ny - goal.y);
-                        better = true;
-                    } else if (tentativeG < neighbor.gCost){
-                        better = true;
-                    }
-                    if (better){
+                    if (tentativeG = current.gCost){
                         neighbor.gCost = tentativeG;
+                        neighbor.hCost = Math.abs(nx - goal.x) + Math. abs(ny - goal.y);
                         neighbor.parent = current;
                         openSet.add(neighbor);
-                    }
                 }
             }          
         }
+    }
         return null;
+   }
+ }
 }
-    public static void main(String[] args) {
-         
-        
-    }
-    }
-    
-}
+
 
 
 
