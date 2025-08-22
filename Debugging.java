@@ -48,17 +48,7 @@ public class Main {
         return Objects.hash(x,y);
     }
 }
-   public static void main(String[] args) {
-       
-
-
-    
-}
-    
-}
-    
-
-public class AStarSearch{
+    public class AStarSearch{
     static int[][] grid = {
         {0, 0, 0, 0, 0},
         {0, 0, 1, 0, 0},
@@ -66,8 +56,10 @@ public class AStarSearch{
         {0, 1, 0, 0, 0},
         {0, 0, 0, 0, 0},
 };
+        static int ROWS = 5, COLS = 5;
+        
+   public static void main(String[] args) {
 
-    static int ROWS = 5, COLS = 5;
 
     static List<Node> findPath(Node start, Node goal){
         PriorityQueue<Node> openSet = new PriorityQueue<>();
@@ -122,6 +114,7 @@ public class AStarSearch{
     }
     
 }
+
 
 
 
