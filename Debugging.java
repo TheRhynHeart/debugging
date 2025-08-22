@@ -31,6 +31,23 @@ public class Main {
     public double fCost(){
         return gCost + hCost;
     }
+    @Override
+    public int compareTo(Node other){
+        return Double.compare(this.fCost(), other.fCost());
+    }
+
+    @Override
+    public boolean equals (Object obj){
+    if (!(obj instanceof Node)) return false;
+    Node other = (Node) obj;
+        return this.x == other.x && this.y == other.y;
+    }
+
+    @Override
+    public int hashCode(){
+        return Objects.hash(x,y);
+    }
+}
    public static void main(String[] args) {
        
 
@@ -39,23 +56,7 @@ public class Main {
 }
     
 }
-    @Override
-    public int compareTo(Node other){
-    return Double.compare(this.fCost(), other.fCost());
-}
-
-    @Override
-    public boolean equals (Object obj){
-    if (!(obj instanceof Node)) return false;
-    Node other = (Node) obj;
-    return this.x == other.x && this.y == other.y;
-}
-
-    @Override
-    public int hashCode(){
-    return Objects.hash(x,y);
-    }
-}
+    
 
 public class AStarSearch{
     static int[][] grid = {
@@ -121,6 +122,7 @@ public class AStarSearch{
     }
     
 }
+
 
 
 
