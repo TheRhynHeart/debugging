@@ -1,6 +1,8 @@
 package myPackage;
 
-public class Debugging {
+import java.util.*;
+
+public class Main {
 class Node Implments Comparable<Node> {
     public int x, y;
     public double gCost, hCost;
@@ -104,6 +106,7 @@ public class AStarSearch{
     }
     
 }
+
 
 
 
