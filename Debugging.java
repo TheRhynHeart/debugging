@@ -57,13 +57,18 @@ public class Main {
         {0, 0, 0, 0, 0},
 };
         static int ROWS = 5, COLS = 5;
+
+        static List<Node> findPath(Node start, Node goal){
+        PriorityQueue<Node> openSet = new PriorityQueue<>();
         
    public static void main(String[] args) {
 
 
     static List<Node> findPath(Node start, Node goal){
         PriorityQueue<Node> openSet = new PriorityQueue<>();
+        Map<String, Node> allNodes = new HashMap<>();
         Set<Node> closedSet = new HashSet<>();
+        
         openSet.add(start);
 
         while (!openSet.isEmpty()){
@@ -114,6 +119,7 @@ public class Main {
     }
     
 }
+
 
 
 
