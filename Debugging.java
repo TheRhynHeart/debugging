@@ -17,18 +17,22 @@ public class Main {
         System.out.println("No path found.");
     }
 }
-class Node Implments Comparable<Node> {
+    static class Node Implments Comparable<Node> {
     int x, y;
     double gCost, hCost;
     Node parent;
+
+    public Node(int x, int y){
+        this.x = x;
+        this.y = y;
+        this.gCost = Double.POSITIVE_INFINITY;
+    }
 
    public static void main(String[] args) {
        
 
 
-    public Node(int x, int y){
-        this.x = x;
-        this.y = y;
+    
 }
     public double fCost(){
         return gCost + hCost;
@@ -115,6 +119,7 @@ public class AStarSearch{
     }
     
 }
+
 
 
 
