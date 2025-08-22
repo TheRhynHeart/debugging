@@ -3,6 +3,13 @@ package myPackage;
 import java.util.*;
 
 public class Main {
+    Node start = new Node (0, 0);
+    Node goal - new Node (4, 4);
+
+    List<Node> path = findPath(start, goal);
+
+   public static void main(String[] args) {
+       
 class Node Implments Comparable<Node> {
     public int x, y;
     public double gCost, hCost;
@@ -91,10 +98,7 @@ public class AStarSearch{
         return null;
 }
     public static void main(String[] args) {
-         Node start = new Node (0, 0);
-    Node goal - new Node (4, 4);
-    List<Node> path = findPath(start, goal);
-
+         
     if (path != null){
         System.out.println("Path found:");
         for (Node n : path){
@@ -106,6 +110,7 @@ public class AStarSearch{
     }
     
 }
+
 
 
 
