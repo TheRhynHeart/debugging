@@ -18,9 +18,9 @@ public class Main {
     }
 }
 class Node Implments Comparable<Node> {
-    public int x, y;
-    public double gCost, hCost;
-    public Node parent;
+    int x, y;
+    double gCost, hCost;
+    Node parent;
 
    public static void main(String[] args) {
        
@@ -115,6 +115,7 @@ public class AStarSearch{
     }
     
 }
+
 
 
 
