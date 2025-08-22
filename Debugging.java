@@ -74,8 +74,6 @@ public class Main {
         openSet.add(start);
         allNodes.put(start.x + "," + start.y, start);
 
-        
-
         while (!openSet.isEmpty()){
             Node current = openSet.poll();
 
@@ -87,15 +85,19 @@ public class Main {
                 }
             Collections.reverse(path);
             return path;
-            
             } 
-
+            
             ClosedSet.add(current);
+            
             for (int[] dir: new int []][]{1,0},{-1,0},{0,1},{0,-1}}){
-                int nx = current.x + dir[0], ny = current.y + dir[1];
+                int nx = current.x + dir[0]
+                int ny = current.y + dir[1];
+            
                 if (nx >= 0 && ny >= 0 && nx < ROWS && ny < COLS && grid[nx][ny] == 0){
-                
-                    Node neighbor = new Node (nx, ny);
+                    String key = nx + "," + ny;
+                    Node neighbor = allNodes.getOrDefault (key, new Node (nx, ny));
+                    allNodes.put(key, neighbor);
+                    
                     if (closedSet.contains(neighbor)) continue;
 
                     double tentativeG = current.gCost + 1;
@@ -124,6 +126,7 @@ public class Main {
     }
     
 }
+
 
 
 
