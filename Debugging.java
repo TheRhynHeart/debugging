@@ -28,14 +28,16 @@ public class Main {
         this.gCost = Double.POSITIVE_INFINITY;
     }
 
+    public double fCost(){
+        return gCost + hCost;
+    }
    public static void main(String[] args) {
        
 
 
     
 }
-    public double fCost(){
-        return gCost + hCost;
+    
 }
     @Override
     public int compareTo(Node other){
@@ -119,6 +121,7 @@ public class AStarSearch{
     }
     
 }
+
 
 
 
