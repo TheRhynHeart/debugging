@@ -15,13 +15,16 @@ public class Main {
         }
     } else { 
         System.out.println("No path found.");
-         
-   public static void main(String[] args) {
-       
+    }
+}
 class Node Implments Comparable<Node> {
     public int x, y;
     public double gCost, hCost;
     public Node parent;
+
+   public static void main(String[] args) {
+       
+
 
     public Node(int x, int y){
         this.x = x;
@@ -112,6 +115,7 @@ public class AStarSearch{
     }
     
 }
+
 
 
 
