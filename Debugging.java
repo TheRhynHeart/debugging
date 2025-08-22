@@ -68,8 +68,13 @@ public class Main {
         PriorityQueue<Node> openSet = new PriorityQueue<>();
         Map<String, Node> allNodes = new HashMap<>();
         Set<Node> closedSet = new HashSet<>();
-        
+
+        start.gCost = 0;
+        start.hCost = Math.abs(start.x - goal.x) + Math.abs(start.y - goal.y);
         openSet.add(start);
+        allNodes.put(start.x + "," + start.y, start);
+
+        
 
         while (!openSet.isEmpty()){
             Node current = openSet.poll();
@@ -119,6 +124,7 @@ public class Main {
     }
     
 }
+
 
 
 
