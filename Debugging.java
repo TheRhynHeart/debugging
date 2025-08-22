@@ -6,7 +6,7 @@ public class Main {
     Node start = new Node (0, 0);
     Node goal - new Node (4, 4);
 
-    List<Node> path = findPath(start, goal);
+    List<Node> path = AStarSearch.findPath(start, goal);
 
    public static void main(String[] args) {
        
@@ -110,6 +110,7 @@ public class AStarSearch{
     }
     
 }
+
 
 
 
